@@ -13,6 +13,7 @@ https://youtu.be/cQpf7xW_Myc
 (older version but still shows what the tool can do)
 
 # Features
+- NEW: automatically detects the right direction to scale the mesh in so you don't have to do it manually anymore
 - Select multiple meshes and create a area light based on the bounds to easily place the object accordingly
 - Quickly move the object forwards or backwards based on its start position to move it inside or outside the window
 - Automatically change intensity, cutoff and color for the newly created area mesh. 
