@@ -330,11 +330,11 @@ public class BakeryAreaLightTool : EditorWindow
 
         if (xDistance > zDistance)
         {
-            scaleDirection = ScaleDirection.ZX;
+            scaleDirection = ScaleDirection.XZ;
         }
         else
         {
-            scaleDirection = ScaleDirection.XZ;
+            scaleDirection = ScaleDirection.ZX;
 
         }
     }
