@@ -311,8 +311,32 @@ public class BakeryAreaLightTool : EditorWindow
         {
             boundsToMatch.Encapsulate(obj.GetComponent<MeshRenderer>().bounds);
         }
-
+        CalculateScaleDirection();
         ScaleLightMesh();
+    }
+
+    public void CalculateScaleDirection()
+    {
+        Vector3 minX = new Vector3(boundsToMatch.min.x, boundsToMatch.min.y, boundsToMatch.center.z);
+        Vector3 maxX = new Vector3(boundsToMatch.max.x, boundsToMatch.min.y, boundsToMatch.center.z);
+        float xDistance = maxX.x - minX.x;
+        
+
+        Vector3 minZ = new Vector3(boundsToMatch.center.x, boundsToMatch.min.y, boundsToMatch.min.z);
+        Vector3 maxZ = new Vector3(boundsToMatch.center.x, boundsToMatch.min.y, boundsToMatch.max.z);
+
+        float zDistance = maxZ.z - minZ.z;
+        
+
+        if (xDistance > zDistance)
+        {
+            scaleDirection = ScaleDirection.ZX;
+        }
+        else
+        {
+            scaleDirection = ScaleDirection.XZ;
+
+        }
     }
 
 
