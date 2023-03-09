@@ -1,5 +1,5 @@
 # BakeryAreaLightTool
-Editor window tool to automate the tedious process of manually placing area lights
+Editor window tool to automate the tedious process of manually placing area lights. Created for bakery light meshes
 
 Place the 'BakeryAreaLightTool' in your editor folder.
 The BakeryAreaLightManager should be placed in a regular scrips folder.
